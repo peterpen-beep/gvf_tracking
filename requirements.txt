@@ -1,0 +1,8 @@
+# 核心求解器：仅需 numpy 与 matplotlib；scipy 未使用（GPIO 用显式积分，ODE 用 RK4 自实现）
+numpy>=1.24
+matplotlib>=3.7
+
+# 可选：只有 tools/make_video.py（生成演示视频）需要。
+# imageio-ffmpeg 自带 ffmpeg 可执行文件，无需系统安装（本地会落在 .vendor/，已 gitignore）
+imageio>=2.30
+imageio-ffmpeg>=0.5
